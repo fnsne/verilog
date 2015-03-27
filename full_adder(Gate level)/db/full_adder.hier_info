@@ -1,0 +1,61 @@
+|full_adder
+sum[0] <= full_adder_1bit:adder1.port0
+sum[1] <= full_adder_1bit:adder2.port0
+sum[2] <= full_adder_1bit:adder3.port0
+sum[3] <= full_adder_1bit:adder4.port0
+car_out <= full_adder_1bit:adder4.port1
+car_in => car_in~0.IN1
+a[0] => a[0]~3.IN1
+a[1] => a[1]~2.IN1
+a[2] => a[2]~1.IN1
+a[3] => a[3]~0.IN1
+b[0] => b[0]~3.IN1
+b[1] => b[1]~2.IN1
+b[2] => b[2]~1.IN1
+b[3] => b[3]~0.IN1
+
+
+|full_adder|full_adder_1bit:adder1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => xor2.IN1
+car_in => and1.IN1
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+
+
+|full_adder|full_adder_1bit:adder2
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => xor2.IN1
+car_in => and1.IN1
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+
+
+|full_adder|full_adder_1bit:adder3
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => xor2.IN1
+car_in => and1.IN1
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+
+
+|full_adder|full_adder_1bit:adder4
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => xor2.IN1
+car_in => and1.IN1
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+
+

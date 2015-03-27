@@ -1,0 +1,355 @@
+Simulator report for full_adder
+Fri Mar 13 15:53:32 2015
+Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 130 nodes    ;
+; Simulation Coverage         ;      45.38 % ;
+; Total Number of Transitions ; 1922         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Functional     ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; full_adder.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      45.38 % ;
+; Total nodes checked                                 ; 130          ;
+; Total output ports checked                          ; 130          ;
+; Total output ports with complete 1/0-value coverage ; 59           ;
+; Total output ports with no 1/0-value coverage       ; 64           ;
+; Total output ports with no 1-value coverage         ; 68           ;
+; Total output ports with no 0-value coverage         ; 67           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                              ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+; Node Name                                                         ; Output Port Name                                                  ; Output Port Type ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+; |full_adder|sum[1]                                                ; |full_adder|sum[1]                                                ; pin_out          ;
+; |full_adder|sum[2]                                                ; |full_adder|sum[2]                                                ; pin_out          ;
+; |full_adder|sum[3]                                                ; |full_adder|sum[3]                                                ; pin_out          ;
+; |full_adder|sum[4]                                                ; |full_adder|sum[4]                                                ; pin_out          ;
+; |full_adder|sum[5]                                                ; |full_adder|sum[5]                                                ; pin_out          ;
+; |full_adder|sum[6]                                                ; |full_adder|sum[6]                                                ; pin_out          ;
+; |full_adder|sum[7]                                                ; |full_adder|sum[7]                                                ; pin_out          ;
+; |full_adder|sum[8]                                                ; |full_adder|sum[8]                                                ; pin_out          ;
+; |full_adder|sum[9]                                                ; |full_adder|sum[9]                                                ; pin_out          ;
+; |full_adder|sum[10]                                               ; |full_adder|sum[10]                                               ; pin_out          ;
+; |full_adder|a[0]                                                  ; |full_adder|a[0]                                                  ; out              ;
+; |full_adder|a[1]                                                  ; |full_adder|a[1]                                                  ; out              ;
+; |full_adder|a[2]                                                  ; |full_adder|a[2]                                                  ; out              ;
+; |full_adder|a[3]                                                  ; |full_adder|a[3]                                                  ; out              ;
+; |full_adder|a[4]                                                  ; |full_adder|a[4]                                                  ; out              ;
+; |full_adder|a[5]                                                  ; |full_adder|a[5]                                                  ; out              ;
+; |full_adder|b[0]                                                  ; |full_adder|b[0]                                                  ; out              ;
+; |full_adder|b[1]                                                  ; |full_adder|b[1]                                                  ; out              ;
+; |full_adder|b[2]                                                  ; |full_adder|b[2]                                                  ; out              ;
+; |full_adder|b[3]                                                  ; |full_adder|b[3]                                                  ; out              ;
+; |full_adder|b[4]                                                  ; |full_adder|b[4]                                                  ; out              ;
+; |full_adder|b[5]                                                  ; |full_adder|b[5]                                                  ; out              ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|sum     ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|sum     ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|out2    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|car_out ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1|sum     ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1|out2    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1|car_out ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|sum     ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|out2    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|car_out ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|out1    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|sum     ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|out2    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|car_out ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2|out1    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2|sum     ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2|out2    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2|out3    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2|car_out ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1|out1    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1|sum     ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1|out2    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1|out3    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1|car_out ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4|out1    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4|sum     ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4|out2    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4|out3    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4|car_out ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|out1    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|sum     ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|out3    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|car_out ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|out1    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|sum     ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|out3    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|car_out ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|car_out ; out0             ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                 ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+; Node Name                                                         ; Output Port Name                                                  ; Output Port Type ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+; |full_adder|sum[0]                                                ; |full_adder|sum[0]                                                ; pin_out          ;
+; |full_adder|sum[11]                                               ; |full_adder|sum[11]                                               ; pin_out          ;
+; |full_adder|sum[12]                                               ; |full_adder|sum[12]                                               ; pin_out          ;
+; |full_adder|sum[13]                                               ; |full_adder|sum[13]                                               ; pin_out          ;
+; |full_adder|sum[14]                                               ; |full_adder|sum[14]                                               ; pin_out          ;
+; |full_adder|sum[15]                                               ; |full_adder|sum[15]                                               ; pin_out          ;
+; |full_adder|car_out                                               ; |full_adder|car_out                                               ; pin_out          ;
+; |full_adder|car_in                                                ; |full_adder|car_in                                                ; out              ;
+; |full_adder|a[7]                                                  ; |full_adder|a[7]                                                  ; out              ;
+; |full_adder|a[8]                                                  ; |full_adder|a[8]                                                  ; out              ;
+; |full_adder|a[9]                                                  ; |full_adder|a[9]                                                  ; out              ;
+; |full_adder|a[10]                                                 ; |full_adder|a[10]                                                 ; out              ;
+; |full_adder|a[11]                                                 ; |full_adder|a[11]                                                 ; out              ;
+; |full_adder|a[12]                                                 ; |full_adder|a[12]                                                 ; out              ;
+; |full_adder|a[13]                                                 ; |full_adder|a[13]                                                 ; out              ;
+; |full_adder|a[14]                                                 ; |full_adder|a[14]                                                 ; out              ;
+; |full_adder|a[15]                                                 ; |full_adder|a[15]                                                 ; out              ;
+; |full_adder|b[6]                                                  ; |full_adder|b[6]                                                  ; out              ;
+; |full_adder|b[7]                                                  ; |full_adder|b[7]                                                  ; out              ;
+; |full_adder|b[9]                                                  ; |full_adder|b[9]                                                  ; out              ;
+; |full_adder|b[10]                                                 ; |full_adder|b[10]                                                 ; out              ;
+; |full_adder|b[11]                                                 ; |full_adder|b[11]                                                 ; out              ;
+; |full_adder|b[12]                                                 ; |full_adder|b[12]                                                 ; out              ;
+; |full_adder|b[13]                                                 ; |full_adder|b[13]                                                 ; out              ;
+; |full_adder|b[14]                                                 ; |full_adder|b[14]                                                 ; out              ;
+; |full_adder|b[15]                                                 ; |full_adder|b[15]                                                 ; out              ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out1    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|sum     ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out2    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out3    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|car_out ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out1    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|sum     ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out2    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out3    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|car_out ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out1    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|sum     ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out2    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out3    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|car_out ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out1    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|sum     ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out2    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out3    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|car_out ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out1    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|sum     ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out2    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out3    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|car_out ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out1    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out2    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out3    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|car_out ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|out1    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|out3    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1|out1    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|out1    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|out3    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|out3    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|out2    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|out2    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out1    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|sum     ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out2    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out3    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|car_out ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|car_out ; out0             ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                 ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+; Node Name                                                         ; Output Port Name                                                  ; Output Port Type ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+; |full_adder|sum[0]                                                ; |full_adder|sum[0]                                                ; pin_out          ;
+; |full_adder|sum[11]                                               ; |full_adder|sum[11]                                               ; pin_out          ;
+; |full_adder|sum[12]                                               ; |full_adder|sum[12]                                               ; pin_out          ;
+; |full_adder|sum[13]                                               ; |full_adder|sum[13]                                               ; pin_out          ;
+; |full_adder|sum[14]                                               ; |full_adder|sum[14]                                               ; pin_out          ;
+; |full_adder|sum[15]                                               ; |full_adder|sum[15]                                               ; pin_out          ;
+; |full_adder|car_out                                               ; |full_adder|car_out                                               ; pin_out          ;
+; |full_adder|car_in                                                ; |full_adder|car_in                                                ; out              ;
+; |full_adder|a[6]                                                  ; |full_adder|a[6]                                                  ; out              ;
+; |full_adder|a[7]                                                  ; |full_adder|a[7]                                                  ; out              ;
+; |full_adder|a[8]                                                  ; |full_adder|a[8]                                                  ; out              ;
+; |full_adder|a[9]                                                  ; |full_adder|a[9]                                                  ; out              ;
+; |full_adder|a[10]                                                 ; |full_adder|a[10]                                                 ; out              ;
+; |full_adder|a[11]                                                 ; |full_adder|a[11]                                                 ; out              ;
+; |full_adder|a[12]                                                 ; |full_adder|a[12]                                                 ; out              ;
+; |full_adder|a[13]                                                 ; |full_adder|a[13]                                                 ; out              ;
+; |full_adder|a[14]                                                 ; |full_adder|a[14]                                                 ; out              ;
+; |full_adder|a[15]                                                 ; |full_adder|a[15]                                                 ; out              ;
+; |full_adder|b[8]                                                  ; |full_adder|b[8]                                                  ; out              ;
+; |full_adder|b[9]                                                  ; |full_adder|b[9]                                                  ; out              ;
+; |full_adder|b[10]                                                 ; |full_adder|b[10]                                                 ; out              ;
+; |full_adder|b[11]                                                 ; |full_adder|b[11]                                                 ; out              ;
+; |full_adder|b[12]                                                 ; |full_adder|b[12]                                                 ; out              ;
+; |full_adder|b[13]                                                 ; |full_adder|b[13]                                                 ; out              ;
+; |full_adder|b[14]                                                 ; |full_adder|b[14]                                                 ; out              ;
+; |full_adder|b[15]                                                 ; |full_adder|b[15]                                                 ; out              ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out1    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|sum     ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out2    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out3    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|car_out ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out1    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|sum     ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out2    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out3    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|car_out ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out1    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|sum     ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out2    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out3    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|car_out ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out1    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|sum     ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out2    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out3    ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|car_out ; |full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out1    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|sum     ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out2    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out3    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|car_out ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out1    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out2    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out3    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|car_out ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3|car_out ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|out1    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|out3    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1|out3    ; |full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|out3    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|out3    ; |full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|out2    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|out2    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out1    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out1    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|sum     ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|sum     ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out2    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out2    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out3    ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|out3    ; out0             ;
+; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|car_out ; |full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1|car_out ; out0             ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Mar 13 15:53:32 2015
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off full_adder -c full_adder
+Info: Using vector source file "D:/1023349/full_adder(dataflow level)/full_adder.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      45.38 %
+Info: Number of transitions in simulation is 1922
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 109 megabytes
+    Info: Processing ended: Fri Mar 13 15:53:33 2015
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

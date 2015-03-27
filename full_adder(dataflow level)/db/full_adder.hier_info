@@ -1,0 +1,297 @@
+|full_adder
+sum[0] <= full_adder_4bit:adder1.port0
+sum[1] <= full_adder_4bit:adder1.port0
+sum[2] <= full_adder_4bit:adder1.port0
+sum[3] <= full_adder_4bit:adder1.port0
+sum[4] <= full_adder_4bit:adder2.port0
+sum[5] <= full_adder_4bit:adder2.port0
+sum[6] <= full_adder_4bit:adder2.port0
+sum[7] <= full_adder_4bit:adder2.port0
+sum[8] <= full_adder_4bit:adder3.port0
+sum[9] <= full_adder_4bit:adder3.port0
+sum[10] <= full_adder_4bit:adder3.port0
+sum[11] <= full_adder_4bit:adder3.port0
+sum[12] <= full_adder_4bit:adder4.port0
+sum[13] <= full_adder_4bit:adder4.port0
+sum[14] <= full_adder_4bit:adder4.port0
+sum[15] <= full_adder_4bit:adder4.port0
+car_out <= full_adder_4bit:adder4.port1
+car_in => car_in~0.IN1
+a[0] => a[0]~15.IN1
+a[1] => a[1]~14.IN1
+a[2] => a[2]~13.IN1
+a[3] => a[3]~12.IN1
+a[4] => a[4]~11.IN1
+a[5] => a[5]~10.IN1
+a[6] => a[6]~9.IN1
+a[7] => a[7]~8.IN1
+a[8] => a[8]~7.IN1
+a[9] => a[9]~6.IN1
+a[10] => a[10]~5.IN1
+a[11] => a[11]~4.IN1
+a[12] => a[12]~3.IN1
+a[13] => a[13]~2.IN1
+a[14] => a[14]~1.IN1
+a[15] => a[15]~0.IN1
+b[0] => b[0]~15.IN1
+b[1] => b[1]~14.IN1
+b[2] => b[2]~13.IN1
+b[3] => b[3]~12.IN1
+b[4] => b[4]~11.IN1
+b[5] => b[5]~10.IN1
+b[6] => b[6]~9.IN1
+b[7] => b[7]~8.IN1
+b[8] => b[8]~7.IN1
+b[9] => b[9]~6.IN1
+b[10] => b[10]~5.IN1
+b[11] => b[11]~4.IN1
+b[12] => b[12]~3.IN1
+b[13] => b[13]~2.IN1
+b[14] => b[14]~1.IN1
+b[15] => b[15]~0.IN1
+
+
+|full_adder|full_adder_4bit:adder1
+sum[0] <= full_adder_1bit:adder1.port0
+sum[1] <= full_adder_1bit:adder2.port0
+sum[2] <= full_adder_1bit:adder3.port0
+sum[3] <= full_adder_1bit:adder4.port0
+car_out <= full_adder_1bit:adder4.port1
+car_in => car_in~0.IN1
+a[0] => a[0]~3.IN1
+a[1] => a[1]~2.IN1
+a[2] => a[2]~1.IN1
+a[3] => a[3]~0.IN1
+b[0] => b[0]~3.IN1
+b[1] => b[1]~2.IN1
+b[2] => b[2]~1.IN1
+b[3] => b[3]~0.IN1
+
+
+|full_adder|full_adder_4bit:adder1|full_adder_1bit:adder1
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder1|full_adder_1bit:adder2
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder1|full_adder_1bit:adder3
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder1|full_adder_1bit:adder4
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder2
+sum[0] <= full_adder_1bit:adder1.port0
+sum[1] <= full_adder_1bit:adder2.port0
+sum[2] <= full_adder_1bit:adder3.port0
+sum[3] <= full_adder_1bit:adder4.port0
+car_out <= full_adder_1bit:adder4.port1
+car_in => car_in~0.IN1
+a[0] => a[0]~3.IN1
+a[1] => a[1]~2.IN1
+a[2] => a[2]~1.IN1
+a[3] => a[3]~0.IN1
+b[0] => b[0]~3.IN1
+b[1] => b[1]~2.IN1
+b[2] => b[2]~1.IN1
+b[3] => b[3]~0.IN1
+
+
+|full_adder|full_adder_4bit:adder2|full_adder_1bit:adder1
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder2|full_adder_1bit:adder2
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder2|full_adder_1bit:adder3
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder2|full_adder_1bit:adder4
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder3
+sum[0] <= full_adder_1bit:adder1.port0
+sum[1] <= full_adder_1bit:adder2.port0
+sum[2] <= full_adder_1bit:adder3.port0
+sum[3] <= full_adder_1bit:adder4.port0
+car_out <= full_adder_1bit:adder4.port1
+car_in => car_in~0.IN1
+a[0] => a[0]~3.IN1
+a[1] => a[1]~2.IN1
+a[2] => a[2]~1.IN1
+a[3] => a[3]~0.IN1
+b[0] => b[0]~3.IN1
+b[1] => b[1]~2.IN1
+b[2] => b[2]~1.IN1
+b[3] => b[3]~0.IN1
+
+
+|full_adder|full_adder_4bit:adder3|full_adder_1bit:adder1
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder3|full_adder_1bit:adder2
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder3|full_adder_1bit:adder3
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder3|full_adder_1bit:adder4
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder4
+sum[0] <= full_adder_1bit:adder1.port0
+sum[1] <= full_adder_1bit:adder2.port0
+sum[2] <= full_adder_1bit:adder3.port0
+sum[3] <= full_adder_1bit:adder4.port0
+car_out <= full_adder_1bit:adder4.port1
+car_in => car_in~0.IN1
+a[0] => a[0]~3.IN1
+a[1] => a[1]~2.IN1
+a[2] => a[2]~1.IN1
+a[3] => a[3]~0.IN1
+b[0] => b[0]~3.IN1
+b[1] => b[1]~2.IN1
+b[2] => b[2]~1.IN1
+b[3] => b[3]~0.IN1
+
+
+|full_adder|full_adder_4bit:adder4|full_adder_1bit:adder1
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder4|full_adder_1bit:adder2
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder4|full_adder_1bit:adder3
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
+|full_adder|full_adder_4bit:adder4|full_adder_1bit:adder4
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+car_out <= car_out~0.DB_MAX_OUTPUT_PORT_TYPE
+car_in => sum~0.IN1
+car_in => out2.IN1
+a => out1.IN0
+a => out3.IN0
+b => out1.IN1
+b => out3.IN1
+
+
